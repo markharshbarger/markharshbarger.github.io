@@ -1,3 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27);');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #202127;
+  color: #5a8f60;
+}
+
+header{
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  filter: dropshadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+}
+.logo{
+  font-size: 3rem;
+  color: #5a8f60;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.logo:hover{
+  transform: scale(1.1);
+}
+nav a{
+  font-size: 1.8rem;
+  color: #f8f7f2;
+  margin-left: 4rem;
+  transition: .3s ease;
+  border-bottom: 3px solid transparent;
+}
+nav a:hover, nav a.active{
+  color: #5a8f60;
+  border-bottom: 3px solid #5a8f60;
+}
+
+section{
+  min-height: 100vh;
+  padding: 5rem 9% 5rem;
+}
+.home, .reports, .tests{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background-color: #1b1b1f;
+}
+
+h1{
+  color: #f8f7f2;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+h2{
+  font-size: 3rem;
+}
+span{
+  color: #5a8f60;
+}
+p{
+  font-size: 1.5rem;
+  color: #989898;
+}
+
+.home-img{
+  border-radius: 50%;
+  background: #202127;
+  box-shadow: 0 0 25px #202127;
+  width: 32vw;
+  height: 32vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-img svg{
+  position: relative;
+  width: 30vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.framework-icons{
+  display: flex;
+  justify-content: right;
+}
+.framework-icons svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  /*border: 0.2rem solid #5a8f60;*/
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease;
+  color: #5a8f60;
+}
+
+.about{
+  display: flex;
+}
+.about-content{
+  margin:5%;
+}
+.about-content p{
+  color: #989797;
+}
+
+.reports-content{
+  display: flex;
+  margin-top: 5rem;
+}
+.report-container {
+  background-color: #202127;
+  border-radius: 5%;
+  width: 32vw;
+  height: 40vw;
+  margin: 1rem;
+}
+.report-container div{
+  margin: 2rem;
+}
+
+.report-spacing{
+  height: 20vh;
+  overflow: hidden;
 }
