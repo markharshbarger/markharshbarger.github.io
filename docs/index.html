@@ -11,7 +11,13 @@
 <body>
   <header>
     <a href="#" class="logo">MMJB</a>
-    <nav>
+    <div class="hamburger" id="hamburger">
+<!--      &#9776; -->
+      <div class="bar1" id="bar1"></div>
+      <div class="bar2" id="bar2"></div>
+      <div class="bar3" id="bar3"></div>
+    </div>
+    <nav id="nav-menu">
       <ul>
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
@@ -22,7 +28,6 @@
       </ul>
     </nav>
   </header>
-  <script src="scrolling.js"></script>
 
   <section class="home" id="home">
     <div class="home-img">
@@ -112,7 +117,7 @@
 
     </div>
   </section>
-  <script src="reports.js"></script>
+
   <section class="specs" id="specs">
     <div>
 
@@ -123,6 +128,8 @@
 
     </div>
   </section>
-
+  <script src="mobileNav.js"></script>
+  <script src="scrolling.js"></script>
+  <script src="reports.js"></script>
 </body>
 </html>
