@@ -157,6 +157,12 @@ p{
   display: flex;
   justify-content: center;
 }
+.about p{
+  text-align: center;
+}
+.about span{
+  color: #f8f7f2;
+}
 .about-content {
   margin: 5%;
   width: 100%;
