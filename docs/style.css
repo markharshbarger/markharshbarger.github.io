@@ -160,6 +160,11 @@ p{
 .about p{
   text-align: center;
 }
+
+.about h1 span{
+  color: #64449f;
+}
+
 .about span{
   color: #f8f7f2;
 }
