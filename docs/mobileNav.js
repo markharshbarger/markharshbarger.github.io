@@ -4,11 +4,13 @@ const navMenu = document.getElementById('nav-menu');
 
 
 hamburger.addEventListener('click', () => {
-    toggleNav();
+    navMenu.classList.toggle('show');
+    hamburger.classList.toggle('change');
 
 });
 
-function toggleNav() {
-    navMenu.classList.toggle('show');
-    hamburger.classList.toggle('change');
+
+function hideNav(){
+    navMenu.classList.remove('show');
+    hamburger.classList.remove('change');
 }
