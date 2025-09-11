@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27);');
+:root {
+  --darkest-bg: #1b1b1f;
+  --dark-bg: #202127;
+  --light-bg: #2d2e34;
+}
+
 
 * {
   margin: 0;
@@ -19,7 +25,7 @@ body{
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  background-color: #202127;
+  background-color: var(--dark-bg);
   color: #449f87;
 }
 
@@ -97,7 +103,7 @@ section{
   justify-content: center;
   align-items: center;
   gap: 8rem;
-  background-color: #1b1b1f;
+  background-color: var(--darkest-bg);
 }
 
 h1{
@@ -119,8 +125,8 @@ p{
 
 .home-img{
   border-radius: 50%;
-  background: #202127;
-  box-shadow: 0 0 25px #202127;
+  background: var(--dark-bg);
+  box-shadow: 0 0 25px var(--dark-bg);
   width: 32vw;
   height: 32vw;
   display: flex;
@@ -178,13 +184,13 @@ p{
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 5%;
-  background-color: #1b1b1f;
+  background-color: var(--darkest-bg);
   padding: 1rem;
   border-radius: 2vh;
 }
 
 .team-member-card {
-  background-color: #2d2e34;
+  background-color: var(--light-bg);
   flex: 1 1 250px;
   max-width: 300px;
   min-height: 40vh;
@@ -211,7 +217,7 @@ p{
 }
 
 .report-container {
-  background-color: #202127;
+  background-color: var(--dark-bg);
   border-radius: 2rem;
   width: 32vw;
   height: 40vw;
@@ -237,7 +243,7 @@ p{
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #202127;
+    background-color: var(--dark-bg);
     display: none;
     flex-direction: column;
     align-items: center;
@@ -295,3 +301,27 @@ p{
   }
 }
 
+@media(prefers-color-scheme: light) {
+  :root {
+    --darkest-bg: #f1f1f1;
+    --dark-bg: #dcdcdc;
+    --light-bg: #e4e4e4;
+  }
+  h1{
+    color: #1b1b1f;
+  }
+
+  nav a{
+    color: #1b1b1f;
+  }
+  .reports-content h1, p {
+    color: #1b1b1f;
+  }
+  .about-content p span{
+    color: #449f87;
+  }
+  .bar1, .bar2, .bar3 {
+    background-color: #1b1b1f;
+  }
+
+}

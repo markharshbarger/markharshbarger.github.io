@@ -1,6 +1,7 @@
 reports =[
     ["1", "Over the course of this week we created a github repo and discord. We've begun researching frameworks and discussing requirements. We met up with the team and discussed upcoming meeting times.", "Continuing discussing different frameworks that we are all familiar with. We are not familiar with GitHub pages so the plan for next week is to research that and possibly get it set up.", "Met 1 time for an hour"],
-        ["2", "We set up GitHub pages for our team website with a barebones set up. We have decided to use React or pure html and css. For our database we have decided to use Postgresql. For the backend we are currently looking at using Spring.", "Next week we are looking at figuring out the structuring of the frontend and backend and formulating our Q/A to ask in the slack chat. We plan on making a skeleton of our project.", "Met 2 times for a total of 2 hours"]
+    ["2", "We set up GitHub pages for our team website with a barebones set up. We have decided to use React or pure html and css. For our database we have decided to use Postgresql. For the backend we are currently looking at using Spring.", "Next week we are looking at figuring out the structuring of the frontend and backend and formulating our Q/A to ask in the slack chat. We plan on making a skeleton of our project.", "Met 2 times for a total of 2 hours"],
+    ["3"]
 ]
 
 for(var i =0; i < reports.length; i++){
